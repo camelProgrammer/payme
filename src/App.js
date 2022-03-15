@@ -16,7 +16,11 @@ import {
 } from './pages';
 
 const app = () => {
-    return <div></div>;
+    return (
+        <div>
+            <Navbar />
+        </div>
+    );
 };
 
 export default app;

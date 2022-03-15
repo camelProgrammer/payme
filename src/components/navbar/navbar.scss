@@ -1,0 +1,179 @@
+@import '../../index.scss';
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+
+    @include breakpointMax(lg) {
+        flex-direction: column;
+    }
+
+    &--small {
+        display: flex;
+
+        @include breakpointMax(lg) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__decorator {
+        position: absolute;
+        top: 0;
+
+        &--first {
+            left: 0;
+        }
+
+        &--second {
+            right: 0;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &--large {
+            display: flex;
+
+            @include breakpointMax(lg) {
+                display: none;
+            }
+        }
+
+        &--small {
+            display: none;
+
+            @include breakpointMax(lg) {
+                display: flex;
+            }
+        }
+
+        &-logo {
+            padding: 0 3.25rem 0 15%;
+        }
+
+        &-hamburger {
+            width: 1.65rem;
+            height: 0.1875rem;
+            border-radius: 4rem;
+            background: $primary;
+            position: relative;
+            display: none;
+
+            animation-name: close;
+            animation-duration: 300ms;
+
+            @include breakpointMax(lg) {
+                display: flex;
+            }
+
+            &-container {
+                height: 1.8rem;
+                width: 1.65rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 15%;
+            }
+
+            &::before,
+            &::after {
+                width: 1.65rem;
+                height: 0.1875rem;
+                border-radius: 4rem;
+                background: $primary;
+                content: '';
+                position: absolute;
+            }
+
+            &::before {
+                transform: translateY(-0.5rem);
+            }
+
+            &::after {
+                transform: translateY(0.5rem);
+                animation-name: close-after;
+                animation-duration: 300ms;
+                animation-fill-mode: forwards;
+            }
+
+            &--open {
+                animation-name: open;
+                animation-duration: 300ms;
+                animation-fill-mode: forwards;
+
+                &::before {
+                    display: none;
+                }
+
+                &::after {
+                    animation-name: open-after;
+                    animation-duration: 300ms;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+
+        &-container {
+            display: flex;
+            align-items: center;
+
+            @include breakpointMax(lg) {
+                flex-direction: column;
+                margin-top: 3rem;
+            }
+        }
+
+        &-element {
+            font-size: 1.125rem;
+            color: $primary;
+            cursor: pointer;
+            margin-right: 3.125rem;
+
+            @include breakpointMax(lg) {
+                margin: 0 0 0.5rem 0;
+            }
+        }
+    }
+
+    &__btn {
+        font-size: 1.125rem;
+        color: $primary;
+        background: none;
+        cursor: pointer;
+        margin-right: 1.75rem;
+
+        @include breakpointMax(lg) {
+            margin: 0 0 1rem 0;
+        }
+
+        &--sign-up {
+            color: $green;
+            padding: 1.125rem 2.8125rem;
+            border: 1.5px solid $green;
+        }
+
+        &-container {
+            display: flex;
+            margin-right: 5rem;
+            min-width: 250px;
+
+            @include breakpointMax(lg) {
+                display: flex;
+                flex-direction: column;
+                margin: 1.5rem 0 0;
+                min-width: 150px;
+            }
+        }
+    }
+}
