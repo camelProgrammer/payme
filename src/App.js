@@ -20,6 +20,7 @@ const app = () => {
         <div>
             <Navbar />
             <Header />
+            <Brands />
         </div>
     );
 };

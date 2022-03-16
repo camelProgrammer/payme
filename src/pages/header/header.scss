@@ -27,7 +27,7 @@
             top: 110%;
             left: 0;
 
-            @include breakpointMax(md) {
+            @include breakpointMax(xl) {
                 display: none;
             }
         }
