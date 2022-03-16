@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './navbar.scss';
 
 // Images
-import { logo, decorator1, decorator2, hamburger } from './imports';
+import { logo, decorator1, decorator2 } from './imports';
 
 const Logo = () => (
     <>

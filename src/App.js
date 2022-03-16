@@ -19,6 +19,7 @@ const app = () => {
     return (
         <div>
             <Navbar />
+            <Header />
         </div>
     );
 };

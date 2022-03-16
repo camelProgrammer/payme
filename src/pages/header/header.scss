@@ -1,0 +1,148 @@
+@import '../../index.scss';
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin-top: 1rem;
+
+    @include breakpointMax(lg) {
+        grid-template-columns: 1fr;
+        margin-top: 10%;
+    }
+
+    &__decorator {
+        position: absolute;
+
+        &--first {
+            top: 25%;
+            left: 0;
+
+            @include breakpointMax(sm) {
+                display: none;
+            }
+        }
+
+        &--second {
+            top: 110%;
+            left: 0;
+
+            @include breakpointMax(md) {
+                display: none;
+            }
+        }
+
+        &--third {
+            top: -7%;
+            right: -10%;
+
+            @include breakpointMax(xl) {
+                display: none;
+            }
+        }
+
+        &--fourth {
+            top: 100%;
+            right: 1.5%;
+
+            @include breakpointMax(md) {
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        padding-left: 6rem;
+        position: relative;
+
+        @include breakpointMax(lg) {
+            justify-content: center;
+        }
+
+        @include breakpointMax(md) {
+            padding-left: 3rem;
+        }
+    }
+
+    &__heading {
+        color: $primary;
+        font-size: 6rem;
+        font-weight: 100;
+        z-index: 2;
+
+        @include breakpointMax(lg) {
+            font-size: 4.5rem;
+        }
+
+        @include breakpointMax(md) {
+            font-size: 3.5rem;
+        }
+
+        &--green {
+            color: $green;
+        }
+    }
+
+    &__text {
+        color: $primary;
+        font-size: 1rem;
+        line-height: 147.9%;
+        font-weight: 300;
+        width: 60%;
+
+        @include breakpointMax(md) {
+            width: 70%;
+        }
+    }
+
+    &__btn {
+        color: $white;
+        font-size: 1.125rem;
+        font-weight: 300;
+        letter-spacing: 0.05rem;
+        font-family: $Raleway;
+        width: 13.4375rem;
+        height: 3.625rem;
+        background: $green;
+
+        &--second {
+            color: $green;
+            background: $white;
+            border: 1px solid $green;
+        }
+
+        &-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 1.5rem;
+            column-gap: 1.25rem;
+            padding-right: 15%;
+        }
+    }
+
+    &__container {
+        @include breakpointMax(lg) {
+            display: flex;
+            justify-content: center;
+            margin-top: 15%;
+        }
+    }
+
+    &__img {
+        width: 85%;
+
+        @include breakpointMax(lg) {
+            width: 50%;
+        }
+
+        @include breakpointMax(md) {
+            width: 70%;
+        }
+    }
+}
