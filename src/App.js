@@ -21,6 +21,7 @@ const app = () => {
             <Navbar />
             <Header />
             <Brands />
+            <About />
         </div>
     );
 };

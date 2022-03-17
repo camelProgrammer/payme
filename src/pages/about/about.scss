@@ -1,0 +1,124 @@
+@import '../../index.scss';
+
+.sth {
+    width: 100px;
+    height: 100px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+    margin-top: 6rem;
+
+    @include breakpointMax(md) {
+        margin-top: 3rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        row-gap: 2rem;
+    }
+
+    &__heading {
+        font-weight: 100;
+        font-size: 4rem;
+        line-height: 100%;
+        color: $primary;
+
+        @include breakpointMax(md) {
+            font-size: 3rem;
+        }
+
+        &--green {
+            color: $green;
+        }
+    }
+
+    &__text {
+        color: $primary;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: $Roboto;
+        text-align: center;
+
+        width: 80%;
+
+        @include breakpointMax(md) {
+            font-size: 0.9rem;
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2.5rem;
+
+        @include breakpointMax(md) {
+            display: none;
+        }
+
+        &--small {
+            display: none;
+
+            @include breakpointMax(md) {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &_column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 2.5rem;
+
+            &--left {
+                align-items: flex-end;
+
+                @include breakpointMax(md) {
+                    align-items: center;
+                }
+            }
+
+            &--right {
+                align-items: flex-start;
+                margin-top: 5rem;
+
+                @include breakpointMax(md) {
+                    align-items: center;
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+    }
+
+    &__card {
+        max-height: 29.5rem;
+
+        @include breakpointMax(lg) {
+            max-height: 18rem;
+        }
+
+        @include breakpointMax(md) {
+            max-width: 90%;
+        }
+    }
+
+    &__btn {
+        color: $green;
+        font-size: 1.125rem;
+        font-weight: 100;
+        font-family: $Raleway;
+        background: $white;
+        border: 1px solid $green;
+
+        padding: 1.125rem 4rem;
+    }
+}

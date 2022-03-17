@@ -12,7 +12,7 @@ import {
 
 const Header = () => {
     return (
-        <div className='header' id='Home'>
+        <div className='header' id='home'>
             <div className='header__content'>
                 <img
                     className='header__decorator header__decorator--first'
