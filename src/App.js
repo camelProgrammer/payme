@@ -22,6 +22,7 @@ const app = () => {
             <Header />
             <Brands />
             <About />
+            <Features />
         </div>
     );
 };

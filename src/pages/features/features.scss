@@ -1,0 +1,67 @@
+@import '../../index.scss';
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $grey;
+
+    margin-top: 7rem;
+
+    &__heading {
+        font-weight: 100;
+        font-size: 4rem;
+        line-height: 100%;
+        color: $primary;
+        text-align: center;
+
+        padding: 5rem 0 1.8rem 0;
+
+        @include breakpointMax(md) {
+            font-size: 3rem;
+        }
+
+        &--green {
+            color: $green;
+        }
+    }
+
+    &__text {
+        color: $primary;
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 147.9%;
+        text-align: center;
+        width: 40%;
+
+        @include breakpointMax(md) {
+            width: 80%;
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        place-items: center;
+        width: 100%;
+
+        margin-top: 5rem;
+
+        @include breakpointMax(md) {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+    }
+
+    &__btn {
+        color: $green;
+        font-size: 1.125rem;
+        font-weight: 100;
+        font-family: $Raleway;
+        background: none;
+        border: 1px solid $green;
+
+        padding: 1.125rem 4rem;
+        margin: 5rem 0;
+    }
+}
