@@ -23,6 +23,7 @@ const app = () => {
             <Brands />
             <About />
             <Features />
+            <Testimonials />
         </div>
     );
 };

@@ -1,0 +1,62 @@
+@import '../../index.scss';
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    margin-top: 8rem;
+
+    @include breakpointMax(md) {
+        margin-top: 5rem;
+    }
+
+    &__decorator {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+
+        @include breakpointMax(lg) {
+            top: 50%;
+        }
+
+        @include breakpointMax(lg) {
+            top: 40%;
+        }
+    }
+
+    &__heading {
+        color: $primary;
+        font-size: 4rem;
+        font-weight: 100;
+        line-height: 100%;
+        text-align: center;
+
+        @include breakpointMax(md) {
+            font-size: 3rem;
+        }
+
+        &--green {
+            color: $green;
+        }
+    }
+
+    &__text {
+        color: $primary;
+        font-size: 1rem;
+        font-weight: 300;
+        font-family: $Roboto;
+        text-align: center;
+
+        width: 60%;
+
+        margin: 1.875rem auto 5rem auto;
+
+        @include breakpointMax(md) {
+            font-size: 0.9rem;
+            width: 80%;
+        }
+    }
+}
