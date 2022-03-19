@@ -1,0 +1,54 @@
+@import '../../index.scss';
+
+.pricing {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8rem;
+    position: relative;
+
+    @include breakpointMax(md) {
+        margin-top: 5rem;
+    }
+
+    &__decorator {
+        position: absolute;
+        top: 30%;
+        left: 0;
+
+        @include breakpointMax(md) {
+            display: none;
+        }
+    }
+
+    &__heading {
+        font-weight: 100;
+        font-size: 4rem;
+        line-height: 100%;
+        color: $primary;
+        text-align: center;
+        margin-bottom: 4rem;
+
+        @include breakpointMax(md) {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        &--green {
+            color: $green;
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        place-items: center;
+        row-gap: 4rem;
+        width: 80%;
+
+        @include breakpointMax(sm) {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            width: 90%;
+        }
+    }
+}

@@ -9,7 +9,7 @@ import decorator1 from '../../assets/decorator8.svg';
 
 const Testimonials = () => {
     return (
-        <div className='testimonials'>
+        <div className='testimonials' id='testimonials'>
             <img className='testimonials__decorator ' src={decorator1} />
 
             <h2 className='testimonials__heading'>
