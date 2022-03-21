@@ -15,6 +15,7 @@
         position: absolute;
         top: 30%;
         left: 0;
+        z-index: -1;
 
         @include breakpointMax(md) {
             display: none;

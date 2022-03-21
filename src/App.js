@@ -25,6 +25,7 @@ const app = () => {
             <Features />
             <Testimonials />
             <Pricing />
+            <Faq />
         </div>
     );
 };

@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.faq {
+    margin-top: 8rem;
+
+    @include breakpointMax(md) {
+        margin-top: 5rem;
+    }
+
+    &__heading {
+        color: $green;
+        font-weight: 100;
+        font-size: 4rem;
+        line-height: 100%;
+        text-align: center;
+
+        @include breakpointMax(md) {
+            font-size: 3rem;
+        }
+    }
+
+    &__card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+}

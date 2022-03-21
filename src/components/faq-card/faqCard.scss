@@ -1,0 +1,47 @@
+@import '../../index.scss';
+
+.faq-card {
+    background: $white;
+    box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
+    border-radius: 10px;
+    width: 80%;
+    margin-bottom: 3rem;
+
+    &__top {
+        display: flex;
+        padding-top: 2rem;
+    }
+
+    &__btn {
+        padding-left: 2rem;
+
+        @include breakpointMax(lg) {
+            transform: scale(0.8);
+        }
+    }
+
+    &__title {
+        color: $primary;
+        font-size: 1.25rem;
+        font-weight: 300;
+        font-family: $Raleway;
+        margin-left: 1rem;
+
+        @include breakpointMax(lg) {
+            font-size: 1.1rem;
+        }
+    }
+
+    &__text {
+        color: $primary;
+        font-size: 1rem;
+        font-weight: 100;
+        font-family: $Raleway;
+        font-style: italic;
+        margin: 2rem 4rem 2rem 4rem;
+
+        @include breakpointMax(lg) {
+            margin: 2rem;
+        }
+    }
+}
