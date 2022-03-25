@@ -26,6 +26,7 @@ const app = () => {
             <Testimonials />
             <Pricing />
             <Faq />
+            <Footer />
         </div>
     );
 };
