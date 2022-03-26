@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/payme/static/css/main.3e9d9a17.css",
+    "main.js": "/payme/static/js/main.293d705a.js",
+    "static/media/person.png": "/payme/static/media/person.26ba1ce0aad2c4ee3892.png",
+    "static/media/aboutCardSmall1.png": "/payme/static/media/aboutCardSmall1.62fb632fed0518a26fb9.png",
+    "static/media/aboutCard1.png": "/payme/static/media/aboutCard1.6f8d8b7b70a40285aa4f.png",
+    "static/media/aboutCardSmall2.png": "/payme/static/media/aboutCardSmall2.1c2fff83af56fe705564.png",
+    "static/media/aboutCard2.png": "/payme/static/media/aboutCard2.07d4ef35e6279475ba3d.png",
+    "static/media/aboutCardSmall4.png": "/payme/static/media/aboutCardSmall4.b4531800f96e3ad70d76.png",
+    "static/media/aboutCard4.png": "/payme/static/media/aboutCard4.731e169f2ac14ae32593.png",
+    "static/media/aboutCardSmall3.png": "/payme/static/media/aboutCardSmall3.38ae9ffc8e494481af60.png",
+    "static/media/aboutCard3.png": "/payme/static/media/aboutCard3.eadc6ed4911a02f28a8c.png",
+    "static/media/personReview.png": "/payme/static/media/personReview.c8783b847340dd0691c0.png",
+    "static/media/logoFooter.svg": "/payme/static/media/logoFooter.a4976eec57d38632fe6fc1e4c4b166fa.svg",
+    "static/media/logo.svg": "/payme/static/media/logo.babf780e92292d9cc1ffa10596a576b6.svg",
+    "index.html": "/payme/index.html",
+    "static/media/decorator4.svg": "/payme/static/media/decorator4.decadac3bb9e0d48be7f1e05447545df.svg",
+    "static/media/closeBtn.svg": "/payme/static/media/closeBtn.340eb4e6f54ff33eac3874799f0da7fa.svg",
+    "static/media/check.svg": "/payme/static/media/check.78a270fbdf6f199f11f7958ed7706969.svg",
+    "static/media/decorator6.svg": "/payme/static/media/decorator6.880a84cb4f32167267b3abd727647dbf.svg",
+    "static/media/decorator8.svg": "/payme/static/media/decorator8.9c5acadfb3d0ed536c49d249885d1411.svg",
+    "static/media/decorator9.svg": "/payme/static/media/decorator9.e9fbcbee4d5698f9d5586fa71a02b107.svg",
+    "static/media/decorator2.svg": "/payme/static/media/decorator2.1f04e3b522223f7e59a7fd465c8e2589.svg",
+    "static/media/decorator1.svg": "/payme/static/media/decorator1.a584ea3f5abe43dcc35c17574e156f1c.svg",
+    "static/media/decorator5.svg": "/payme/static/media/decorator5.0aab09447003d530ebe974354d3bf3c7.svg",
+    "static/media/openBtn.svg": "/payme/static/media/openBtn.a31d2912b02e06a300865471c1bafb0e.svg",
+    "static/media/hamburger.svg": "/payme/static/media/hamburger.5181571974fa8c324ee81bf69f4af86f.svg",
+    "static/media/decorator3.svg": "/payme/static/media/decorator3.98905cb63e6f9600d1f6b4acd19a7de6.svg",
+    "main.3e9d9a17.css.map": "/payme/static/css/main.3e9d9a17.css.map",
+    "main.293d705a.js.map": "/payme/static/js/main.293d705a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e9d9a17.css",
+    "static/js/main.293d705a.js"
+  ]
+}
